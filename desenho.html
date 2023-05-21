@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/quadra.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(document).mousemove(function(event){
+                $("span").text(event.pageX + ", " + event.pageY);
+            });
+        });
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+<p>El mouse está en las coordenadas:: <span></span>.</p>
+<div id="draggable1" class="ui-widget-content">Gol 01</div>
+
+<div id="draggable2" class="ui-widget-content">PtE 02</div>
+
+<div id="draggable3" class="ui-widget-content">AE 03</div>
+
+<div id="draggable4" class="ui-widget-content">AC 04</div>
+
+<div id="draggable5" class="ui-widget-content">AD 05</div>
+
+<div id="draggable6" class="ui-widget-content">PtD 06</div>
+
+<div id="draggable7" class="ui-widget-content">PV.  07</div>
+
+<div id="draggable8" class="ui-widget-content">Gol 01</div>
+
+<div id="draggable9" class="ui-widget-content">Pt. E 02</div>
+
+<div id="draggable10" class="ui-widget-content">AR. E 03</div>
+
+<div id="draggable11" class="ui-widget-content">AR. C 04</div>
+
+<div id="draggable12" class="ui-widget-content">AR. D 05</div>
+
+<div id="draggable13" class="ui-widget-content">PT. D 06</div>
+
+<div id="draggable14" class="ui-widget-content">PV.  07</div>
+
+<div id="bola" class="ui-widget-content" onmousemove="showCoords(event)" onmouseout="clearCoor()" onclick="getCoor(event)"><img src="images/bolahand.png" alt=""></div>
+
+
+
+<canvas id="myCanvas" width="1180" height="580"></canvas>
+
+<!--<div id="cor1" onclick=changeColor('white')>Branco</div>-->
+
+
+</body>
+<script>
+
+
+</script>
+
+</html>

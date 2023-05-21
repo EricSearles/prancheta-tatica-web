@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Draggable - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+        body {
+            background-image: url("images/quadra-azul-de-handebol-vista-aerea-vetor.jpg");
+            background-repeat: no-repeat;
+            background-size: 1280px;
+            background-position: 50% 2%;
+            margin: 0 20px;
+            padding: 0 30px;
+        }
+        #draggable1, #draggable2, #draggable3, #draggable4, #draggable5, #draggable6 {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+            padding: 2px;
+            border-radius: 20px 20px;
+            background-color: brown;
+            font-size: 14px;
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#draggable1" ).draggable();
+            $( "#draggable2" ).draggable();
+            $( "#draggable3" ).draggable();
+            $( "#draggable4" ).draggable();
+            $( "#draggable5" ).draggable();
+            $( "#draggable6" ).draggable();
+            $( "#draggable7" ).draggable();
+        } );
+    </script>
+
+
+</head>
+<body>
+
+<div id="draggable1" class="ui-widget-content">
+    <p>1</p>
+</div>
+
+<div id="draggable2" class="ui-widget-content">
+    <p>2</p>
+</div>
+
+<div id="draggable3" class="ui-widget-content">
+    <p>3</p>
+</div>
+
+<div id="draggable4" class="ui-widget-content">
+    <p>4</p>
+</div>
+
+<div id="draggable5" class="ui-widget-content">
+    <p>5</p>
+</div>
+
+<div id="draggable6" class="ui-widget-content">
+    <p>6</p>
+</div>
+
+</body>
+</html>

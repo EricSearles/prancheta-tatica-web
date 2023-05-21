@@ -1,0 +1,66 @@
+body {
+    margin: 0 auto;
+    padding: 0 30px;
+}
+#draggable2, #draggable3, #draggable4, #draggable5, #draggable6, #draggable7 {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border-radius: 20px 20px;
+    background-color: brown;
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    display:inline-flex;
+}
+
+#draggable1 {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border-radius: 15px 15px;
+    background-color: lightslategrey;
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    display:inline-flex;
+}
+
+#draggable9, #draggable10, #draggable11, #draggable12, #draggable13, #draggable14 {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border-radius: 20px 20px;
+    background-color: ghostwhite;
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    color: darkred;
+    display:inline-flex;
+}
+
+#draggable8 {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border-radius: 15px 15px;
+    background-color: lightcoral;
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    color: darkred;
+    display:inline-flex;
+}
+
+#bola {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 25px 25px;
+    font-family: Arial;
+    text-align: center;
+    color: white;
+    display:inline-flex;
+}

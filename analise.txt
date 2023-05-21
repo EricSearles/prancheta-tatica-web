@@ -1,0 +1,14 @@
+App Prancheta tatica
+
+Resumo:
+Desenvolver um app capaz de:
+Ter um fundo com a imagem de um campo de jogo
+Trocar dinamicamente a imagem do fundo
+Disponibilizar até 22 jogadores em um campo de jogo
+Disponibilizar cones em um campo de jogo
+Mover jogadores em um campo de jogo
+Mover uma bola em um campo de jogo
+Traçar trajetórias a partir dos objetos no campo de jogo (Bola, Jogadores, Cones)
+guardar a posição inicial dos objetos quando estes forem posicionados no campo de jogo
+
+Requisitos
