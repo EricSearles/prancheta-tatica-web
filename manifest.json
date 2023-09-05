@@ -1,0 +1,15 @@
+{
+  "name": "Prancheta Tática Esportes de Quadra",
+  "short_name": "Prancheta",
+  "theme_color": "#008B8B",
+  "background_color": "#008B8B",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "images/icone.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ]
+}

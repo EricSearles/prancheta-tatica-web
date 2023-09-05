@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Prancheta</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div class="container">
+    <div id="draggable1" class="equipeA">01</div>
+    <div id="draggable2" class="equipeA">02</div>
+    <div id="draggable3" class="equipeA">03</div>
+    <div id="draggable4" class="equipeA">04</div>
+    <div id="draggable5" class="equipeA">05</div>
+    <div id="draggable6" class="equipeA">06</div>
+    <div id="draggable7" class="equipeA">07</div>
+    <h1 id="modalidade">Handball</h1>
+    <div id="draggable8" class="equipeB">01</div>
+    <div id="draggable9" class="equipeB">02</div>
+    <div id="draggable10" class="equipeB">03</div>
+    <div id="draggable11" class="equipeB">04</div>
+    <div id="draggable12" class="equipeB">05</div>
+    <div id="draggable13" class="equipeB">06</div>
+    <div id="draggable14" class="equipeB">07</div>
+    <div id="bola" class="bola"><img src="images/bolahand.png" alt="" width="35"></div>
+
+</div>
+<canvas></canvas>
+<div class="btns">
+    <select id="fundo" class="modalidade">
+        <option value="0">Modalidade</option>
+        <option value="quadra-handball">Handball</option>
+        <option value="quadra-voleyball">Voleyball</option>
+    </select>
+    <label>Cor da linha: </label>
+    <input type="color">
+    <button onclick="clearScreen()" class="clear">Limpar</button>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
