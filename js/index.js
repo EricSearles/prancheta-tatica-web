@@ -14,9 +14,25 @@ $( function() {
     $( "#draggable12" ).draggable();
     $( "#draggable13" ).draggable();
     $( "#draggable14" ).draggable();
+    $( "#draggable15" ).draggable();
+    $( "#draggable16" ).draggable();
+    $( "#draggable17" ).draggable();
+    $( "#draggable18" ).draggable();
+    $( "#draggable19" ).draggable();
+    $( "#draggable20" ).draggable();
+    $( "#draggable21" ).draggable();
+    $( "#draggable22" ).draggable();
 
-    $( "#bola" ).draggable();
+    $( "#bola-a" ).draggable();
+    $( "#bola-b" ).draggable();
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+
+});
 
 
 const sColor = document.querySelector('input')
@@ -31,6 +47,12 @@ let ctx = screen.getContext('2d')
 let select = document.getElementById('fundo')
 let tituloModalidade = document.getElementById('modalidade')
 
+let bolaA = document.getElementById('bola-a')
+let bolaB = document.getElementById('bola-b')
+
+let imgBolaA = document.querySelector("#bolaA");
+let imgBolaB = document.querySelector("#bolaB");
+
 select.addEventListener('change', function(){
     changeBackground(select.value)
 })
@@ -44,8 +66,8 @@ screen.addEventListener('mouseup', mouseUpEvent)
 
 //Deixa o canvas responsivo
 function updateWidth() {
-    screen.width = window.innerWidth * 0.82
-    screen.height = window.innerHeight * 0.79
+    screen.width = window.innerWidth * 0.80
+    screen.height = window.innerHeight * 0.82
 }
 
 function mouseDownEvent(e) {
@@ -80,9 +102,6 @@ function draw(x, y) {
     mouseX = pointX
     mouseY = pointY
 
-
-
-
 }
 
 function clearScreen() {
@@ -90,17 +109,49 @@ function clearScreen() {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
 }
 
-
-
 function changeBackground(image) {
-
+    let imgBall = 'bolahand'
     titulo = image.split("-")
-    console.log(titulo[1])
     tituloModalidade.innerHTML = titulo[1]
     screen.style.backgroundImage = "url(images/"+ image + ".png)"
+
+    if(titulo[1] == 'Handball'){
+        imgBall = 'bolahand'
+    }else if(titulo[1] == 'Voleyball'){
+        imgBall = 'bolavoley'
+    }else if(titulo[1] === 'Basketball'){
+        imgBall = 'bolabasket'
+    }else if(titulo[1] === 'Futebol'){
+        imgBall = 'bolafutebol'
+    }else if (titulo[1] === 'Futsal'){
+        imgBall = 'bolafutsal'
+    }
+    imgBolaA.setAttribute("src", "images/"+ imgBall + ".png");
+    imgBolaB.setAttribute("src", "images/"+ imgBall + ".png");
+
+    console.log(titulo[1], image, imgBall)
+}
+
+function changeBallImage(image){
+   console.log(image)
+}
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
 }
 
 
 
 updateWidth()
+
+
+
+
+
 

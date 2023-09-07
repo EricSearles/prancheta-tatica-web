@@ -2,15 +2,16 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#8A8A7B">
     <title>Prancheta</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+     <script>navigator.serviceWorker.register("service-worker.js")</script>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
 <div class="container">
-    <div id="draggable1" class="equipeA">01</div>
+    <div id="draggable1" class="goleiroA">01</div>
     <div id="draggable2" class="equipeA">02</div>
     <div id="draggable3" class="equipeA">03</div>
     <div id="draggable4" class="equipeA">04</div>
@@ -18,7 +19,7 @@
     <div id="draggable6" class="equipeA">06</div>
     <div id="draggable7" class="equipeA">07</div>
     <h1 id="modalidade">Handball</h1>
-    <div id="draggable8" class="equipeB">01</div>
+    <div id="draggable8" class="goleiroB">01</div>
     <div id="draggable9" class="equipeB">02</div>
     <div id="draggable10" class="equipeB">03</div>
     <div id="draggable11" class="equipeB">04</div>
@@ -32,8 +33,9 @@
 <div class="btns">
     <select id="fundo" class="modalidade">
         <option value="0">Modalidade</option>
-        <option value="quadra-handball">Handball</option>
-        <option value="quadra-voleyball">Voleyball</option>
+        <option value="quadra-Handball">Handball</option>
+        <option value="quadra-Voleyball">Voleyball</option>
+        <option value="quadra-Basketball">Basketball</option>
     </select>
     <label>Cor da linha: </label>
     <input type="color">
